@@ -9,7 +9,7 @@ public:
         int nidx = n - 1; 
         int r_pos = m + n - 1; 
 
-        while (nidx >= 0) {
+        while (nidx >= 0) { // We only need to check nidx because if midx < 0, we can directly copy the remaining elements of nums2
             if(midx >= 0 && nums1[midx] > nums2[nidx]){
                 nums1[r_pos--] = nums1[midx--];
             }else{
